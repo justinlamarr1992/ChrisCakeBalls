@@ -30,9 +30,9 @@
     </header>
     <div id="overlay"><!-- Overlay for dimming screen with Modal --></div>
     <div id="hero">
+      <h1 class="hero-title">Chris Creative CakeBalls</h1>
       <img class="hero-image" src="./images/Pic.jpeg" alt="Hero Cakeballs" />
 
-      <h1 class="hero-title">Chris Creative CakeBalls</h1>
       <p class="hero-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga
         quam ducimus magnam ratione!
@@ -188,59 +188,87 @@
       </div>
     </div>
     <div id="price">
-      <h3>Pricing</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam harum
-        dicta ducimus voluptate asperiores inventore recusandae, excepturi amet
-        qui non repellendus incidunt suscipit quaerat doloremque. Dolorem eaque
-        porro tenetur veniam.
-      </p>
-      <div>
-        <h3>Cakeballs</h3>
-        <h3>$15</h3>
-        <h5>sdfs</h5>
-        <h5>sdfs</h5>
-        <h5>sdfs</h5>
-        <h5>sdfs</h5>
-        <button>Purchase</button>
+      <div class="price-container">
+        <h3 class="price-title">Pricing</h3>
+        <p class="price-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam harum
+          dicta ducimus voluptate asperiores inventore recusandae, excepturi
+          amet qui non repellendus incidunt suscipit quaerat doloremque. Dolorem
+          eaque porro tenetur veniam.
+        </p>
+        <div class="price-block price-1">
+          <h4 class="price-block-title">Single CakeBall</h4>
+          <h3 class="price-block-price">$2</h3>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <button class="price-block-button">Purchase</button>
+        </div>
+        <div class="price-block price-2">
+          <h4 class="price-block-title">Bakers Dozen</h4>
+          <h3 class="price-block-price">$15</h3>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <button class="price-block-button">Purchase</button>
+        </div>
+        <div class="price-block price-3">
+          <h4 class="price-block-title">CakeBall Event</h4>
+          <h3 class="price-block-price">Pricing depends</h3>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <button class="price-block-button">Contact Us</button>
+        </div>
       </div>
     </div>
     <div id="cta">
-      <h3>Contact Us</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-        delectus aliquam ab totam ullam eos! Doloremque vero, repudiandae
-        maiores impedit, officia perspiciatis, suscipit ex inventore ullam
-        tempora ipsum eius tempore!
-      </p>
-      <form action="" method="">
-        <input
-          class="form-input1"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="name"
-        />
-        <input
-          class="form-input3"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email"
-        />
-        <input
-          class="form-input4"
-          type="text"
-          id="message"
-          name="message"
-          placeholder="Message"
-        />
-        <button class="form-button" id="submit" type="submit">Submit</button>
-      </form>
+      <div class="cta-container">
+        <h3 class="cta-title">Contact Us</h3>
+        <p class="cta-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          delectus aliquam ab totam ullam eos! Doloremque vero, repudiandae
+          maiores impedit, officia perspiciatis, suscipit ex inventore ullam
+          tempora ipsum eius tempore!
+        </p>
+        <form class="cta-form" action="" method="">
+          <input
+            class="cta-form-name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="name"
+          />
+          <input
+            class="cta-form-email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+          />
+          <textarea
+            class="cta-form-message"
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Message"
+            rows="4"
+            cols="50"
+          ></textarea>
+
+          <button class="cta-form-button" id="submit" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
     <footer>
       <!-- Company Name and Copyright here -->
       <p>© Copyright 2022. Chris Creative CakeBalls. All Right Reserved.</p>
+      <!-- JustAPPin' Disclaimer -->
     </footer>
     <script src="app.js"></script>
   </body>
