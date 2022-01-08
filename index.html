@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/a3c1e4db5c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,176 +34,408 @@
     </header>
     <div id="overlay"><!-- Overlay for dimming screen with Modal --></div>
     <div id="hero">
-      <h1>Chris Creative CakeBalls</h1>
-      <p>
+      <img class="hero-image" src="./images/Pic.jpeg" alt="Hero Cakeballs" />
+      <h1 class="hero-title">Chris Creative CakeBalls</h1>
+      <p class="hero-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga
         quam ducimus magnam ratione!
       </p>
     </div>
     <div id="about">
-      <h3>Delicious Fun</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit nulla
-        totam minima suscipit numquam quas magni exercitationem reiciendis
-        facere nam quaerat cumque, voluptates aliquid tempore modi illum
-        mollitia labore.
-      </p>
-      <button>Read More</button>
-      <img src="./images/Pic18.jpeg" alt="CakeBall Example" />
-      <img src="./images/Pic5.jpeg" alt="CakeBall Example 2" />
+      <div class="about-container">
+        <h3 class="about-title">Delicious Fun</h3>
+        <p class="about-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit
+          nulla totam minima suscipit numquam quas magni exercitationem
+          reiciendis facere nam quaerat cumque, voluptates aliquid tempore modi
+          illum mollitia labore.
+        </p>
+        <button class="about-button">Read More</button>
+        <img
+          class="about-pic pic1"
+          src="./images/Pic5.jpeg"
+          alt="CakeBall Example"
+        />
+        <img
+          class="about-pic pic2"
+          src="./images/Pic18.jpeg"
+          alt="CakeBall Example 2"
+        />
+      </div>
     </div>
     <div id="cakeballs">
-      <div>
-        <h3>Our Work</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, nemo?
-          Inventore ut ducimus repellat odit, sit modi facilis explicabo
-          reprehenderit esse, maiores aspernatur incidunt minus, laboriosam
-          architecto totam! Architecto, facere.
-        </p>
-        <div>
-          <img src="./images/Pic10.jpeg" alt="Cakeball Example 3" />
-          <img src="./images/Pic20.jpeg" alt="Cakeball Example 4" />
-          <img src="./images/Pic11.jpeg" alt="Cakeball Example 5" />
-          <img src="./images/Pic2.jpeg" alt="Cakeball Example 6" />
-          <img src="./images/Pic19.jpeg" alt="Cakeball Example 7" />
-          <img src="./images/Pic17.jpeg" alt="Cakeball Example 8" />
+      <div class="cakeballs-container">
+        <div class="cakeballs-gallery">
+          <h3 class="cakeballs-gallery-title">Our Work</h3>
+          <p class="cakeballs-gallery-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
+            nemo? Inventore ut ducimus repellat odit, sit modi facilis explicabo
+            reprehenderit esse, maiores aspernatur incidunt minus, laboriosam
+            architecto totam! Architecto, facere.
+          </p>
+          <div class="cakeballs-gallery-pictures">
+            <img
+              class="cakeballs-pic"
+              src="./images/Pic10.jpeg"
+              alt="Cakeball Example 3"
+            />
+            <img
+              class="cakeballs-pic"
+              src="./images/Pic20.jpeg"
+              alt="Cakeball Example 4"
+            />
+            <img
+              class="cakeballs-pic"
+              src="./images/Pic11.jpeg"
+              alt="Cakeball Example 5"
+            />
+            <img
+              class="cakeballs-pic"
+              src="./images/Pic2.jpeg"
+              alt="Cakeball Example 6"
+            />
+            <img
+              class="cakeballs-pic"
+              src="./images/Pic19.jpeg"
+              alt="Cakeball Example 7"
+            />
+            <img
+              class="cakeballs-pic"
+              src="./images/Pic17.jpeg"
+              alt="Cakeball Example 8"
+            />
+          </div>
         </div>
-      </div>
-      <div>
-        <h3>Our Flavors</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          corrupti eum amet voluptate. Quod nesciunt nemo, ex voluptate ducimus
-          aut assumenda sit veritatis tempore a aliquid necessitatibus adipisci?
-          Hic, delectus!
-        </p>
-        <div>
-          <h1>
-            This is where all the individual cakeballs and flavors will go
-          </h1>
+        <div class="cakeballs-flavor">
+          <h3 class="cakeballs-flavor-title">Our Flavors</h3>
+          <p class="cakeballs-flavor-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            corrupti eum amet voluptate. Quod nesciunt nemo, ex voluptate
+            ducimus aut assumenda sit veritatis tempore a aliquid necessitatibus
+            adipisci? Hic, delectus!
+          </p>
+          <div class="cakeballs-flavor-flavors">
+            <!-- <div class="flavor-1"><i class="far fa-circle"></i></div>
+            <div class="flavor-2"><i class="far fa-circle"></i></div>
+            <div class="flavor-3"><i class="far fa-circle"></i></div>
+            <div class="flavor-4"><i class="far fa-circle"></i></div>
+            <div class="flavor-5"><i class="far fa-circle"></i></div>
+            <div class="flavor-6"><i class="far fa-circle"></i></div>
+            <div class="flavor-7"><i class="far fa-circle"></i></div>
+            <div class="flavor-8"><i class="far fa-circle"></i></div>
+            <div class="flavor-9"><i class="far fa-circle"></i></div>
+            <div class="flavor-10"><i class="far fa-circle"></i></div>
+            <div class="flavor-11"><i class="far fa-circle"></i></div>
+            <div class="flavor-12"><i class="far fa-circle"></i></div>
+            <div class="flavor-13"><i class="far fa-circle"></i></div>
+            <div class="flavor-14"><i class="far fa-circle"></i></div>
+            <div class="flavor-15"><i class="far fa-circle"></i></div>
+            <div class="flavor-16"><i class="far fa-circle"></i></div>
+            <div class="flavor-17"><i class="far fa-circle"></i></div>
+            <div class="flavor-18"><i class="far fa-circle"></i></div>
+            <div class="flavor-19"><i class="far fa-circle"></i></div>
+            <div class="flavor-20"><i class="far fa-circle"></i></div>
+            <div class="flavor-21"><i class="far fa-circle"></i></div>
+            <div class="flavor-22"><i class="far fa-circle"></i></div>
+            <div class="flavor-23"><i class="far fa-circle"></i></div>
+            <div class="flavor-24"><i class="far fa-circle"></i></div>
+            <div class="flavor-25"><i class="far fa-circle"></i></div>
+            <div class="flavor-26"><i class="far fa-circle"></i></div> -->
+
+            <img
+              class="flavor-1 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-2 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-3 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-4 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-5 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-6 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-7 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-8 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-9 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-10 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-11 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-12 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-13 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-14 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-15 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-16 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-17 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-18 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-19 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-20 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-21 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-22 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-23 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-24 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-25 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+            <img
+              class="flavor-26 cakeballs-flavor-flavors-image"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+            />
+          </div>
         </div>
       </div>
     </div>
     <div id="team">
-      <h3>Meet Our Team</h3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore
-        consectetur repellat. Enim incidunt repellendus fugiat eos harum amet.
-        Amet, similique. Expedita deleniti amet voluptates voluptatem error ad
-        excepturi rem.
-      </p>
-      <div>
-        <img src="" alt="little image" />
-        <h6>Name</h6>
-        <p>Role</p>
-        <div>social Media links</div>
+      <div class="team-container">
+        <h3 class="team-title">Meet Our Team</h3>
+        <p class="team-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore
+          consectetur repellat. Enim incidunt repellendus fugiat eos harum amet.
+          Amet, similique. Expedita deleniti amet voluptates voluptatem error ad
+          excepturi rem.
+        </p>
+        <div class="team-member member-1">
+          <img class="member-mini-pic" src="" alt="little image" />
+          <p class="member-name">Chris Burnette</p>
+          <h6 class="member-role">Role</h6>
+          <div class="member-social">social Media links</div>
+        </div>
+        <div class="team-member member-2">
+          <img class="member-mini-pic" src="" alt="little image" />
+          <p class="member-name">Jennifer Burnette</p>
+          <h6 class="member-role">Role</h6>
+          <div class="member-social">social Media links</div>
+        </div>
+
+        <img
+          class="member-big-pic"
+          src="./images/Profile.jpeg"
+          alt="Img of person clicked"
+        />
       </div>
-      <div>
-        <img src="" alt="little image" />
-        <h6>Name</h6>
-        <p>Role</p>
-        <div>social Media links</div>
-      </div>
-      <img src="" alt="Img of person clicked" />
     </div>
     <div id="testimony">
-      <h3>Testimonials</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rem,
-        hic unde cumque tenetur sapiente dignissimos, veniam sed odio animi, nam
-        quod doloremque ut alias earum mollitia numquam nesciunt ea?
-      </p>
-      <div>
-        <div>
-          <h6>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
-            magni aspernatur tenetur perferendis sapiente nemo, culpa
-            distinctio, blanditiis quo excepturi, recusandae molestiae.
-          </h6>
-          <img src="" alt="lttle pic" />
-          <h5>Name</h5>
-          <p>Place of test</p>
-        </div>
-        <div>
-          <h6>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
-            magni aspernatur tenetur perferendis sapiente nemo, culpa
-            distinctio, blanditiis quo excepturi, recusandae molestiae.
-          </h6>
-          <img src="" alt="lttle pic" />
-          <h5>Name</h5>
-          <p>Place of test</p>
-        </div>
-        <div>
-          <h6>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
-            magni aspernatur tenetur perferendis sapiente nemo, culpa
-            distinctio, blanditiis quo excepturi, recusandae molestiae.
-          </h6>
-          <img src="" alt="lttle pic" />
-          <h5>Name</h5>
-          <p>Place of test</p>
+      <div class="testimony-container">
+        <h3 class="testimony-title">Testimonials</h3>
+        <p class="testimony-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rem,
+          hic unde cumque tenetur sapiente dignissimos, veniam sed odio animi,
+          nam quod doloremque ut alias earum mollitia numquam nesciunt ea?
+        </p>
+        <div class="testimonials">
+          <div class="testimony-block test-1">
+            <h6 class="testimonial">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
+              magni aspernatur tenetur perferendis sapiente nemo, culpa
+              distinctio, blanditiis quo excepturi, recusandae molestiae.
+            </h6>
+            <img class="test-image" src="" alt="lttle pic" />
+            <h5 class="test-name">Name</h5>
+            <p class="test-source">Place of test</p>
+          </div>
+          <div class="testimony-block test-2">
+            <h6 class="testimonial">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
+              magni aspernatur tenetur perferendis sapiente nemo, culpa
+              distinctio, blanditiis quo excepturi, recusandae molestiae.
+            </h6>
+            <img class="test-image" src="" alt="lttle pic" />
+            <h5 class="test-name">Name</h5>
+            <p class="test-source">Place of test</p>
+          </div>
+          <div class="testimony-block test-3">
+            <h6 class="testimonial">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
+              magni aspernatur tenetur perferendis sapiente nemo, culpa
+              distinctio, blanditiis quo excepturi, recusandae molestiae.
+            </h6>
+            <img class="test-image" src="" alt="lttle pic" />
+            <h5 class="test-name">Name</h5>
+            <p class="test-source">Place of test</p>
+          </div>
         </div>
       </div>
     </div>
     <div id="price">
-      <h3>Pricing</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam harum
-        dicta ducimus voluptate asperiores inventore recusandae, excepturi amet
-        qui non repellendus incidunt suscipit quaerat doloremque. Dolorem eaque
-        porro tenetur veniam.
-      </p>
-      <div>
-        <h3>Cakeballs</h3>
-        <h3>$15</h3>
-        <h5>sdfs</h5>
-        <h5>sdfs</h5>
-        <h5>sdfs</h5>
-        <h5>sdfs</h5>
-        <button>Purchase</button>
+      <div class="price-container">
+        <h3 class="price-title">Pricing</h3>
+        <p class="price-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam harum
+          dicta ducimus voluptate asperiores inventore recusandae, excepturi
+          amet qui non repellendus incidunt suscipit quaerat doloremque. Dolorem
+          eaque porro tenetur veniam.
+        </p>
+        <div class="price-block price-1">
+          <h4 class="price-block-title">Single CakeBall</h4>
+          <h3 class="price-block-price">$2</h3>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <button class="price-block-button">Purchase</button>
+        </div>
+        <div class="price-block price-2">
+          <h4 class="price-block-title">Bakers Dozen</h4>
+          <h3 class="price-block-price">$15</h3>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <button class="price-block-button">Purchase</button>
+        </div>
+        <div class="price-block price-3">
+          <h4 class="price-block-title">CakeBall Event</h4>
+          <h3 class="price-block-price">Pricing depends</h3>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <h5 class="price-block-description">sdfs</h5>
+          <button class="price-block-button">Contact Us</button>
+        </div>
       </div>
     </div>
     <div id="cta">
-      <h3>Contact Us</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-        delectus aliquam ab totam ullam eos! Doloremque vero, repudiandae
-        maiores impedit, officia perspiciatis, suscipit ex inventore ullam
-        tempora ipsum eius tempore!
-      </p>
-      <form action="" method="">
-        <input
-          class="form-input1"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="name"
-        />
-        <input
-          class="form-input3"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email"
-        />
-        <input
-          class="form-input4"
-          type="text"
-          id="message"
-          name="message"
-          placeholder="Message"
-        />
-        <button class="form-button" id="submit" type="submit">Submit</button>
-      </form>
+      <div class="cta-container">
+        <h3 class="cta-title">Contact Us</h3>
+        <p class="cta-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          delectus aliquam ab totam ullam eos! Doloremque vero, repudiandae
+          maiores impedit, officia perspiciatis, suscipit ex inventore ullam
+          tempora ipsum eius tempore!
+        </p>
+        <form class="cta-form" action="" method="">
+          <input
+            class="cta-form-name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="name"
+          />
+          <input
+            class="cta-form-email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+          />
+          <textarea
+            class="cta-form-message"
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Message"
+            rows="4"
+            cols="50"
+          ></textarea>
+
+          <button class="cta-form-button" id="submit" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
     <footer>
       <!-- Company Name and Copyright here -->
-      <p>© Copyright 2022. Chris Creative CakeBalls. All Right Reserved.</p>
+      <div class="footer-container">
+        <p class="footer-disclaimer">
+          © Copyright 2022. Chris Creative CakeBalls. All Right Reserved.
+        </p>
+        <!-- JustAPPin' Disclaimer -->
+      </div>
     </footer>
     <script src="app.js"></script>
   </body>
