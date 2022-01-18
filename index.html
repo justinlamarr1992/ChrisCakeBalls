@@ -22,34 +22,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="navBar" id="myNavBar">
-      <a href="#hero" class="active">Chris CakeBalls</a>
-      <a href="#about">About</a>
-      <a href="#cakeballs">Cakeballs</a>
-      <a href="#team">Our Team</a>
-      <a href="#cta">Contact Us</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <!-- <header class="navBar" id="myNavBar"> -->
+    <header class="" id="myNavBar">
+      <div class="header-container">
+        <img
+          class="logo"
+          src="./images/66-661223_png-file-svg-file-upload-icon-png-transparent.png.jpeg"
+          alt="fake logo image"
+        />
+        <!-- <a href="#hero" class="active">Chris CakeBalls</a> -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#cakeballs">Cakeballs</a></li>
+            <li><a href="#team">Our Team</a></li>
+          </ul>
+        </nav>
+        <a class="header-cta-button" href="#cta"><button>Contact Us</button></a>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
-      </a>
+      </a> -->
+      </div>
     </header>
     <div id="overlay"><!-- Overlay for dimming screen with Modal --></div>
     <div id="hero">
       <img class="hero-image" src="./images/Pic.jpeg" alt="Hero Cakeballs" />
       <h1 class="hero-title">Chris Creative CakeBalls</h1>
-      <p class="hero-description">
+      <h4 class="hero-description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga
         quam ducimus magnam ratione!
-      </p>
+      </h4>
     </div>
     <div id="about">
       <div class="about-container">
         <h3 class="about-title">Delicious Fun</h3>
-        <p class="about-description">
+        <h5 class="about-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit
           nulla totam minima suscipit numquam quas magni exercitationem
           reiciendis facere nam quaerat cumque, voluptates aliquid tempore modi
           illum mollitia labore.
-        </p>
+        </h5>
         <button class="about-button">Read More</button>
         <img
           class="about-pic pic1"
@@ -67,53 +79,59 @@
       <div class="cakeballs-container">
         <div class="cakeballs-gallery">
           <h3 class="cakeballs-gallery-title">Our Work</h3>
-          <p class="cakeballs-gallery-description">
+          <h5 class="cakeballs-gallery-description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
             nemo? Inventore ut ducimus repellat odit, sit modi facilis explicabo
             reprehenderit esse, maiores aspernatur incidunt minus, laboriosam
             architecto totam! Architecto, facere.
-          </p>
+          </h5>
           <div class="cakeballs-gallery-pictures">
+            <!-- add two mor pictures to take up open space -->
             <img
-              class="cakeballs-pic"
+              class="cakeballs-pic cakeball-1"
               src="./images/Pic10.jpeg"
               alt="Cakeball Example 3"
             />
             <img
-              class="cakeballs-pic"
+              class="cakeballs-pic cakeball-2"
               src="./images/Pic20.jpeg"
               alt="Cakeball Example 4"
             />
             <img
-              class="cakeballs-pic"
+              class="cakeballs-pic cakeball-3"
               src="./images/Pic11.jpeg"
               alt="Cakeball Example 5"
             />
             <img
-              class="cakeballs-pic"
-              src="./images/Pic2.jpeg"
+              class="cakeballs-pic cakeball-4"
+              src="./images/Pic13.jpeg"
               alt="Cakeball Example 6"
             />
             <img
-              class="cakeballs-pic"
+              class="cakeballs-pic cakeball-5"
               src="./images/Pic19.jpeg"
               alt="Cakeball Example 7"
             />
             <img
-              class="cakeballs-pic"
-              src="./images/Pic17.jpeg"
+              class="cakeballs-pic cakeball-6"
+              src="./images/Pic8.jpeg"
+              alt="Cakeball Example 8"
+            />
+            <img
+              class="cakeballs-pic cakeball-7"
+              src="./images/Pic22.jpeg"
               alt="Cakeball Example 8"
             />
           </div>
         </div>
         <div class="cakeballs-flavor">
           <h3 class="cakeballs-flavor-title">Our Flavors</h3>
-          <p class="cakeballs-flavor-description">
+          <h5 class="cakeballs-flavor-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             corrupti eum amet voluptate. Quod nesciunt nemo, ex voluptate
             ducimus aut assumenda sit veritatis tempore a aliquid necessitatibus
             adipisci? Hic, delectus!
-          </p>
+          </h5>
           <div class="cakeballs-flavor-flavors">
             <!-- <div class="flavor-1"><i class="far fa-circle"></i></div>
             <div class="flavor-2"><i class="far fa-circle"></i></div>
@@ -279,23 +297,30 @@
     <div id="team">
       <div class="team-container">
         <h3 class="team-title">Meet Our Team</h3>
-        <p class="team-description">
+        <h5 class="team-description">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolore
-          consectetur repellat. Enim incidunt repellendus fugiat eos harum amet.
-          Amet, similique. Expedita deleniti amet voluptates voluptatem error ad
-          excepturi rem.
-        </p>
+          consectetur repellat.
+        </h5>
         <div class="team-member member-1">
-          <img class="member-mini-pic" src="" alt="little image" />
-          <p class="member-name">Chris Burnette</p>
-          <h6 class="member-role">Role</h6>
-          <div class="member-social">social Media links</div>
+          <i class="fas fa-user-circle fa-4x member-mini-pic"></i>
+          <h4 class="member-name">Chris Burnette</h4>
+          <h6 class="member-role text-gray">Founder</h6>
+          <!-- <div class="member-social">social Media links</div> -->
+          <div class="member-social">
+            <i class="fab fa-facebook fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+            <i class="fab fa-twitter fa-lg"></i>
+          </div>
         </div>
         <div class="team-member member-2">
-          <img class="member-mini-pic" src="" alt="little image" />
-          <p class="member-name">Jennifer Burnette</p>
-          <h6 class="member-role">Role</h6>
-          <div class="member-social">social Media links</div>
+          <i class="fas fa-user-circle fa-4x member-mini-pic"></i>
+          <h4 class="member-name">Jennifer Burnette</h4>
+          <h6 class="member-role text-gray">Co-Founder</h6>
+          <div class="member-social">
+            <i class="fab fa-facebook fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+            <i class="fab fa-twitter fa-lg"></i>
+          </div>
         </div>
 
         <img
@@ -318,10 +343,9 @@
             <h6 class="testimonial">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
-              magni aspernatur tenetur perferendis sapiente nemo, culpa
-              distinctio, blanditiis quo excepturi, recusandae molestiae.
+              magni aspernatur tenetur perferendis.
             </h6>
-            <img class="test-image" src="" alt="lttle pic" />
+            <i class="fas fa-user-circle fa-4x test-image"></i>
             <h5 class="test-name">Name</h5>
             <p class="test-source">Place of test</p>
           </div>
@@ -329,10 +353,9 @@
             <h6 class="testimonial">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
-              magni aspernatur tenetur perferendis sapiente nemo, culpa
-              distinctio, blanditiis quo excepturi, recusandae molestiae.
+              magni aspernatur tenetur perferendis.
             </h6>
-            <img class="test-image" src="" alt="lttle pic" />
+            <i class="fas fa-user-circle fa-4x test-image"></i>
             <h5 class="test-name">Name</h5>
             <p class="test-source">Place of test</p>
           </div>
@@ -340,10 +363,9 @@
             <h6 class="testimonial">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
-              magni aspernatur tenetur perferendis sapiente nemo, culpa
-              distinctio, blanditiis quo excepturi, recusandae molestiae.
+              magni aspernatur tenetur perferendis.
             </h6>
-            <img class="test-image" src="" alt="lttle pic" />
+            <i class="fas fa-user-circle fa-4x test-image"></i>
             <h5 class="test-name">Name</h5>
             <p class="test-source">Place of test</p>
           </div>
@@ -379,7 +401,7 @@
         </div>
         <div class="price-block price-3">
           <h4 class="price-block-title">CakeBall Event</h4>
-          <h3 class="price-block-price">Pricing depends</h3>
+          <h3 class="price-block-price">Call Us</h3>
           <h5 class="price-block-description">sdfs</h5>
           <h5 class="price-block-description">sdfs</h5>
           <h5 class="price-block-description">sdfs</h5>
@@ -391,33 +413,88 @@
     <div id="cta">
       <div class="cta-container">
         <h3 class="cta-title">Contact Us</h3>
-        <p class="cta-description">
+        <h5 class="cta-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
           delectus aliquam ab totam ullam eos! Doloremque vero, repudiandae
           maiores impedit, officia perspiciatis, suscipit ex inventore ullam
           tempora ipsum eius tempore!
-        </p>
+        </h5>
         <form class="cta-form" action="" method="">
           <input
             class="cta-form-name"
             type="text"
             id="name"
             name="name"
-            placeholder="name"
+            placeholder="Your Name"
           />
           <input
             class="cta-form-email"
             type="email"
             id="email"
             name="email"
-            placeholder="email"
+            placeholder="Your Email"
           />
+
+          <select
+            name="cakeballs"
+            id="cakeballs-select-flavor"
+            class="cta-form-select select-flavor"
+          >
+            <option value="0">Cakeball Flavor:</option>
+            <option value="Angel-Food">Angel Food</option>
+            <option value="Banana">Banana</option>
+            <option value="Bubblegum">Bubblegum</option>
+            <option value="Butter-Cream">Butter Cream</option>
+            <option value="Carrot-Cake">Carrot Cake</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Chocolate-Coconut">
+              Chocolate Coconut (Mounds)
+            </option>
+            <option value="Chocolate-Mint">Chocolate Mint</option>
+            <option value="Chocolate-Orange">Chocolate Orange</option>
+            <option value="French-Vanilla">French Vanilla</option>
+            <option value="Fun-Fetti">Fun Fetti</option>
+            <option value="German-Chocolate">German Chocolate</option>
+            <option value="Lemon">Lemon</option>
+            <option value="Peppermint">Peppermint</option>
+            <option value="Pina-Colada">Pina Colada</option>
+            <option value="Pinapple">Pinapple</option>
+            <option value="Pumpkin-Spice">Pumpkin Spice</option>
+            <option value="Red-Velvet">Red Velvet</option>
+            <option value="Chocolate-Peanut-Butter">
+              Reeses Peanut Butter Cup
+            </option>
+            <option value="Spice-Cake">Spice Cake</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Triple-Chocolate">Triple Chocolate</option>
+            <option value="Vanilla">Vanilla</option>
+            <option value="Wedding-Cake">Wedding Cake</option>
+            <option value="White-Rasberry">White Rasberry</option>
+          </select>
+
+          <select
+            name="cakeballs"
+            id="cakeballs-select-event"
+            class="cta-form-select select-event"
+          >
+            <option value="0">Event:</option>
+            <option value="Baby-Shower">Baby Shower</option>
+            <option value="Banquet">Banquet</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Dinner-Party">Dinner Party</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Holiday">Holiday</option>
+            <option value="House-Warming">House Warming</option>
+            <option value="Pool-Party">Pool Party</option>
+            <option value="Wedding">Wedding</option>
+          </select>
+
           <textarea
             class="cta-form-message"
             type="text"
             id="message"
             name="message"
-            placeholder="Message"
+            placeholder="Any Special Request?"
             rows="4"
             cols="50"
           ></textarea>
@@ -434,6 +511,14 @@
         <p class="footer-disclaimer">
           © Copyright 2022. Chris Creative CakeBalls. All Right Reserved.
         </p>
+        <div class="footer-justappin">
+          <img
+            src="./images/JustAppin.png"
+            alt="JustAPPin' Logo"
+            class="footer-image"
+          />
+          <p>This Website Was Made by JustAPPin LLC</p>
+        </div>
         <!-- JustAPPin' Disclaimer -->
       </div>
     </footer>
