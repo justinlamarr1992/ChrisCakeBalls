@@ -47,11 +47,14 @@
     <div id="overlay"><!-- Overlay for dimming screen with Modal --></div>
     <div id="hero">
       <img class="hero-image" src="./images/Pic.jpeg" alt="Hero Cakeballs" />
-      <h1 class="hero-title">Chris Creative CakeBalls</h1>
-      <h4 class="hero-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga
-        quam ducimus magnam ratione!
-      </h4>
+
+      <div class="hero-container">
+        <h1 class="hero-title">Chris Creative CakeBalls</h1>
+        <h4 class="hero-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga
+          quam ducimus magnam ratione!
+        </h4>
+      </div>
     </div>
     <div id="about">
       <div class="about-container">
@@ -60,9 +63,13 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit
           nulla totam minima suscipit numquam quas magni exercitationem
           reiciendis facere nam quaerat cumque, voluptates aliquid tempore modi
-          illum mollitia labore.
+          illum mollitia labore.Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Saepe sit nulla totam minima suscipit numquam quas
+          magni exercitationem reiciendis facere nam quaerat cumque, voluptates
+          aliquid tempore modi illum mollitia labore.
         </h5>
         <button class="about-button">Read More</button>
+
         <img
           class="about-pic pic1"
           src="./images/Pic5.jpeg"
@@ -86,7 +93,6 @@
             architecto totam! Architecto, facere.
           </h5>
           <div class="cakeballs-gallery-pictures">
-            <!-- add two mor pictures to take up open space -->
             <img
               class="cakeballs-pic cakeball-1"
               src="./images/Pic10.jpeg"
@@ -133,43 +139,57 @@
             adipisci? Hic, delectus!
           </h5>
           <div class="cakeballs-flavor-flavors">
-            <!-- <div class="flavor-1"><i class="far fa-circle"></i></div>
-            <div class="flavor-2"><i class="far fa-circle"></i></div>
-            <div class="flavor-3"><i class="far fa-circle"></i></div>
-            <div class="flavor-4"><i class="far fa-circle"></i></div>
-            <div class="flavor-5"><i class="far fa-circle"></i></div>
-            <div class="flavor-6"><i class="far fa-circle"></i></div>
-            <div class="flavor-7"><i class="far fa-circle"></i></div>
-            <div class="flavor-8"><i class="far fa-circle"></i></div>
-            <div class="flavor-9"><i class="far fa-circle"></i></div>
-            <div class="flavor-10"><i class="far fa-circle"></i></div>
-            <div class="flavor-11"><i class="far fa-circle"></i></div>
-            <div class="flavor-12"><i class="far fa-circle"></i></div>
-            <div class="flavor-13"><i class="far fa-circle"></i></div>
-            <div class="flavor-14"><i class="far fa-circle"></i></div>
-            <div class="flavor-15"><i class="far fa-circle"></i></div>
-            <div class="flavor-16"><i class="far fa-circle"></i></div>
-            <div class="flavor-17"><i class="far fa-circle"></i></div>
-            <div class="flavor-18"><i class="far fa-circle"></i></div>
-            <div class="flavor-19"><i class="far fa-circle"></i></div>
-            <div class="flavor-20"><i class="far fa-circle"></i></div>
-            <div class="flavor-21"><i class="far fa-circle"></i></div>
-            <div class="flavor-22"><i class="far fa-circle"></i></div>
-            <div class="flavor-23"><i class="far fa-circle"></i></div>
-            <div class="flavor-24"><i class="far fa-circle"></i></div>
-            <div class="flavor-25"><i class="far fa-circle"></i></div>
-            <div class="flavor-26"><i class="far fa-circle"></i></div> -->
-
             <img
+              class="flavor-1 cakeballs-flavor-flavors-image"
+              id="modalPic"
+              src="./images/CakeBalls/TestBall1.png"
+              alt="testcake"
+              data-modal-target="#modal1"
+            />
+            <!-- <img
               class="flavor-1 cakeballs-flavor-flavors-image"
               src="./images/CakeBalls/TestBall1.png"
               alt="testcake"
-            />
+            /> -->
+            <!-- <button class="about-button" data-modal-target="#modal1">
+              Learn More
+            </button> -->
+            <div class="modal" id="modal1">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Modal Header1</h2>
+                  <button data-close-button class="close-button">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h6>Modal Body1</h6>
+                </div>
+                <div class="modal-footer">
+                  <h3>Modal Footer1</h3>
+                </div>
+              </div>
+            </div>
             <img
               class="flavor-2 cakeballs-flavor-flavors-image"
               src="./images/CakeBalls/TestBall1.png"
               alt="testcake"
-            />
+            /><div class="modal" id="modal2">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Modal Header2/h2>
+                  <button data-close-button class="close-button">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h6>Modal Body2</h6>
+                </div>
+                <div class="modal-footer">
+                  <h3>Modal Footer2</h3>
+                </div>
+              </div>
+            </div>
             <img
               class="flavor-3 cakeballs-flavor-flavors-image"
               src="./images/CakeBalls/TestBall1.png"
@@ -343,11 +363,15 @@
             <h6 class="testimonial">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
-              magni aspernatur tenetur perferendis.
+              magni aspernatur tenetur perferendis.Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
             </h6>
-            <i class="fas fa-user-circle fa-4x test-image"></i>
-            <h5 class="test-name">Name</h5>
-            <p class="test-source">Place of test</p>
+            <div class="test-user">
+              <i class="fas fa-user-circle fa-4x test-image"></i>
+              <h5 class="test-name">Name</h5>
+              <p class="test-source">Place of test</p>
+            </div>
           </div>
           <div class="testimony-block test-2">
             <h6 class="testimonial">
@@ -355,9 +379,11 @@
               Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
               magni aspernatur tenetur perferendis.
             </h6>
-            <i class="fas fa-user-circle fa-4x test-image"></i>
-            <h5 class="test-name">Name</h5>
-            <p class="test-source">Place of test</p>
+            <div class="test-user">
+              <i class="fas fa-user-circle fa-4x test-image"></i>
+              <h5 class="test-name">Name</h5>
+              <p class="test-source">Place of test</p>
+            </div>
           </div>
           <div class="testimony-block test-3">
             <h6 class="testimonial">
@@ -365,9 +391,11 @@
               Reprehenderit praesentium omnis eum hic tempora quis dolore ullam
               magni aspernatur tenetur perferendis.
             </h6>
-            <i class="fas fa-user-circle fa-4x test-image"></i>
-            <h5 class="test-name">Name</h5>
-            <p class="test-source">Place of test</p>
+            <div class="test-user">
+              <i class="fas fa-user-circle fa-4x test-image"></i>
+              <h5 class="test-name">Name</h5>
+              <p class="test-source">Place of test</p>
+            </div>
           </div>
         </div>
       </div>
