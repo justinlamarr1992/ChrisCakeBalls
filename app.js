@@ -9,6 +9,10 @@ function myFunction() {
 }
 
 var dataMap = new Map([
+  [
+    document.getElementById("aboutModalButton"),
+    document.getElementById("aboutModal"),
+  ],
   [document.getElementById("cake1"), document.getElementById("cakeModal1")],
   [document.getElementById("cake2"), document.getElementById("cakeModal2")],
   [document.getElementById("cake3"), document.getElementById("cakeModal3")],
