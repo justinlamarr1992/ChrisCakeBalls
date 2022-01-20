@@ -233,25 +233,26 @@
     /* to center in middle of screen */
     left: 0;
     top: 0;
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%) scale(0); */
-    /* transition: 200ms ease-in-out; */
-    /* border: 1px solid black;
-    border-radius: var(--brad); */
-    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: var(--brad);
+    z-index: 1;
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-    /* background-color: var(--sec-c); */
+    background-color: var(--sec-c);
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* width: 1000px;
+    width: 1000px;
     max-width: 80%;
     max-height: 85%;
-    overflow-y: scroll; */
+    overflow-y: scroll;
   }
-  .modal.active {
+
+  /* .modal.active {
     transform: translate(-50%, -50%) scale(1);
   }
   .modal-content {
@@ -265,19 +266,19 @@
     box-shadow: var(--box-shadow);
     animation-name: animatetop;
     animation-duration: 0.4s;
-  }
-  .modal-header {
-    /* padding: 10px 15px;
+  } */
+  /* .modal-header { */
+  /* padding: 10px 15px;
     
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black; */
-    display: flex;
+  /* display: flex;
     justify-content: space-between;
     padding: 2px 16px;
     background-color: var(--qua-c);
-  }
-
+  } */
+  /* 
   .modal-header .close-button {
     float: right;
     cursor: pointer;
@@ -291,9 +292,9 @@
   .modal-footer {
     padding: 2px 16px;
     background-color: var(--qua-c);
-  }
+  } */
   /* Add Animation */
-  @keyframes animatetop {
+  /* @keyframes animatetop {
     from {
       top: -300px;
       opacity: 0;
@@ -302,24 +303,98 @@
       top: 0;
       opacity: 1;
     }
-  }
+  } */
 
-  #overlay {
+  /* #overlay {
     position: fixed;
-    opacity: 0;
-    /* transition: 200ms ease-in-out; */
-    top: 0;
+    opacity: 0; */
+  /* transition: 200ms ease-in-out; */
+  /* top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* to click on button when class is not active */
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.5); */
+  /* to click on button when class is not active */
+  /* pointer-events: none;
     z-index: 2;
-  }
-  #overlay.active {
+  } */
+  /* #overlay.active {
     opacity: 1;
     pointer-events: all;
+  } */
+  /* The Modal (background) */
+
+  /* Modal Content */
+  .modal-content {
+    max-height: 80%;
+    overflow: auto;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+  .modal-body {
+    padding: 2px 16px;
+  }
+
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
   }
 
   /* Header and Nav */
@@ -988,6 +1063,7 @@
   .footer-image {
     width: 100px;
   }
+  /* Modal Test */
 
   /* navConnect2 Section */
   .iandt {
