@@ -189,12 +189,12 @@
     /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
     outline: none;
   }
-  button:focus,
+  /* button:focus,
   :focus input[type="button"]:focus,
   input[type="submit"]:focus,
   input[type="reset"]:focus {
     background: #e5e5e5;
-  }
+  } */
   input[type="text"],
   input[type="email"] {
     border: none;
@@ -566,6 +566,38 @@
     justify-items: center;
     align-items: center;
   }
+  .cakeballs-flavor-text-pic {
+    position: relative;
+    text-align: center;
+    color: Black;
+    display: flex;
+    flex-direction: column;
+  }
+  /* .cakeballs-flavor-text-pic {
+    position: relative;
+    text-align: center;
+    color: Black;
+  } */
+  .flavor-text {
+    display: none;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+  }
+  .cakeballs-flavor-flavors-image {
+    width: 100%;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0 4px 8px #222222);
+    filter: drop-shadow(0 4px 8px #222222);
+  }
+  .cakeballs-flavor-flavors-image:hover {
+    opacity: 0.5;
+    transform: var(--grow);
+  }
+  .cakeballs-flavor-flavors-image:hover + .flavor-text {
+    display: block;
+  }
   .flavor-1 {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -670,16 +702,6 @@
     grid-column: 12/13;
     grid-row: 4/5;
   }
-  .cakeballs-flavor-flavors-image {
-    width: 100%;
-    cursor: pointer;
-    -webkit-filter: drop-shadow(0 4px 8px #222222);
-    filter: drop-shadow(0 4px 8px #222222);
-  }
-  .cakeballs-flavor-flavors-image:hover {
-    opacity: 0.5;
-    transform: var(--grow);
-  }
 
   /* Team Section */
   #team {
@@ -734,6 +756,9 @@
     cursor: pointer;
     transform: var(--grow);
   }
+  .team-member:active {
+    background-color: var(--sec-t);
+  }
   .member-mini-pic {
     grid-column: 1/2;
     grid-row: 1/4;
@@ -758,6 +783,11 @@
   }
   .fab {
     padding-right: 10px;
+  }
+
+  .fab:hover {
+    transform: var(--grow);
+    color: var(--pri-t);
   }
 
   /* Testiomony Section */
@@ -862,7 +892,8 @@
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 20% 12.5% 12.5% 12.5% 12.5% 20%;
+    /* grid-template-rows: 10% 20% 12.5% 12.5% 12.5% 12.5% 20%; */
+    grid-template-rows: 10% 20% 17.5% 17.5% 17.5% 17.5% 20%;
     justify-items: center;
     box-shadow: var(--box-shadow);
   }
@@ -874,9 +905,9 @@
   .price-3 {
     background-color: var(--pri-c);
   }
-  .price-3 button {
+  /* .price-3 button {
     background-color: var(--qua-c);
-  }
+  } */
   .price-block-title {
   }
   .price-block-price {
