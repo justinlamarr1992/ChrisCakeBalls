@@ -6,7 +6,7 @@
   /* background-image: linear-gradient(to bottom, #fbe0b5, #ffe1d1, #ffe9ee, #fff5fe, #ffffff); */
 
   --pri-t: #333333;
-  --sec-t: ##ffffff;
+  --sec-t: #ffffff;
   --tri-t: #999999;
   --pri-c: #ff7341;
   --pri-c-rgb: rgba(255, 115, 65, 1);
@@ -55,7 +55,6 @@
   --mb: 24px;
 
   /* Grid Layout */
-  /* TODO go back and change all grid divs to have a container with wcol/mcol and the div inside that to have custome divs */
   --wrow1: 50px 1fr 50px;
   --wcol1: 10% 1fr 10%;
   --wcol: 10% 1fr 5% 1fr 10%;
@@ -131,13 +130,14 @@
     background: var(--background);
     font-family: var(--font);
   }
+  li {
+    color: var(--pri-t);
+  }
 
   li,
-  a,
-  button {
+  a {
     font-weight: 500;
     font-size: 16px;
-    color: var(--sec-t);
     text-decoration: none;
     /* background: none; */
   }
@@ -156,10 +156,11 @@
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
-    background-color: var(--pri-c-rgb);
+    background-color: var(--pri-c);
+    /* background-color: var(--pri-c-rgb); */
     border: none;
     border-radius: var(--brad);
-    /* color: var(--sec-t); */
+    color: var(--sec-t);
     cursor: pointer;
     font-size: var(--wb);
     font-weight: bold;
@@ -349,6 +350,9 @@
     display: inline-block;
     padding: 0px 20px;
   }
+  .nav-links li a {
+    color: var(--pri-t);
+  }
   .nav-links li a:hover {
     color: var(--tri-c);
     background: none;
@@ -365,10 +369,10 @@
   .navBar a {
     float: left;
     display: block;
-    color: var(--pri-t);
+    /* color: var(--pri-t); */
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 17px;
   }
   .navBar a:hover {
@@ -779,10 +783,10 @@
     grid-column: 2/3;
     grid-row: 3/4;
     align-self: start;
-    color: var(--pri-c);
   }
   .fab {
     padding-right: 10px;
+    color: var(--pri-c);
   }
 
   .fab:hover {
@@ -905,19 +909,21 @@
   .price-3 {
     background-color: var(--pri-c);
   }
+  .price-3 .price-block-title,
+  .price-3 .price-block-price,
+  .price-3 .price-block-description {
+    color: white;
+  }
   /* .price-3 button {
     background-color: var(--qua-c);
   } */
-  .price-block-title {
-  }
+
   .price-block-price {
     padding-bottom: 10px;
   }
   .price-block-description {
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .price-block-button {
   }
 
   /* CTA Section */
@@ -1018,23 +1024,6 @@
     width: 100px;
   }
   /* Modal Test */
-
-  /* navConnect2 Section */
-  .iandt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .ionly :hover {
-    color: var(--sec-c);
-  }
-  .ionly:active {
-    color: var(--pri-c);
-  }
-  .feat-item-text {
-    text-align: center;
-    margin: 0;
-  }
 }
 /* Desktops */
 @media screen and (max-width: 1920px) {

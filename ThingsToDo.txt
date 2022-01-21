@@ -1,0 +1,24 @@
+Head - Add Google Analytics, ALL Meta Data, 
+
+Header - Logo, or Words
+
+Hero - Description
+
+About - Description, Modal info for Read More (Inner Story)
+
+Gallery = Description
+
+Flavors - Description, Add Flavor title to every CakeBall, Add list of none pictured CakeBalls,
+Modal info for each CakeBall.
+
+Team - Small picture for Chris and Jen, add Other Social Media Links with icons, Add Big picture of Jen,
+When Person is clicked have picture change
+
+Testimony - Description, Add 3 Testimony of people, with Picture, name and link of their Testimony, Change funky spacing of testimonail grid
+
+Pricing - Description, Add key points
+
+CTA - Description
+
+Footer - Add Link to JustAppin.com
+
