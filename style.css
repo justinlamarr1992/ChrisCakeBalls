@@ -2,21 +2,39 @@
 :root {
   --background: #ffffff;
   --c-background-down: linear-gradient(to bottom, #fbe0b5, #ffffff);
+  /* --c-background-down: linear-gradient(to bottom, #c89e58, #ffffff); */
+  /* --c-background-down: linear-gradient(to bottom, #bd817f, #ffffff); */
   --c-background-up: linear-gradient(to top, #fbe0b5, #ffffff);
-  /* background-image: linear-gradient(to bottom, #fbe0b5, #ffe1d1, #ffe9ee, #fff5fe, #ffffff); */
+  /* --c-background-up: linear-gradient(to top, #c89e58, #ffffff); */
+  /* --c-background-up: linear-gradient(to top, #bd817f, #ffffff); */
 
   --pri-t: #333333;
   --sec-t: #ffffff;
   --tri-t: #999999;
   --pri-c: #ff7341;
+  /* --pri-c: #20304f; */
+  /* --pri-c: #c25e5e; */
   --pri-c-rgb: rgba(255, 115, 65, 1);
+  /* --pri-c-rgb: rgb(34, 62, 153); */
+  /* --pri-c-rgb: rgb(34, 62, 153); */
   --sec-c: #fac4cd;
+  /* --sec-c: #e7d8be; */
+  /* --sec-c: #fff6f5; */
   --tri-c: #f51b7e;
+  /* --tri-c: #f51b7e; */
+  /* --tri-c: #f51b7e; */
   --qua-c: #fbe0b5;
+  /* --qua-c: #c89e58; */
+  /* --qua-c: #bd817f; */
   --qua-c-dark: rgb(216, 187, 140);
+  /* --qua-c-dark: rgb(216, 187, 140); */
+  /* --qua-c-dark: rgb(216, 187, 140); */
   --navb-c: #fbe0b5;
+  /* --navb-c: #c89e58; */
+  /* --navb-c: #bd817f; */
 
   /* Typography */
+  --head-font: "Pacifico", cursive;
   --font: "DM Sans", sans-serif;
 
   /* Text Size */
@@ -174,7 +192,9 @@
   input[type="button"]:hover,
   input[type="submit"]:hover,
   input[type="reset"]:hover {
-    background-color: rgba(255, 115, 65, 0.8);
+    /* background-color: rgba(255, 115, 65, 0.8); */
+    background-color: var(--sec-t);
+    color: var(--sec-p);
     transform: var(--grow);
   }
   /* for hover needs to be RGBA for opacty */
@@ -339,9 +359,11 @@
     /* width: 100%; */
   }
   .logo {
+    font-family: var(--head-font);
     cursor: pointer;
     margin-right: auto;
-    width: 50px;
+    color: var(--sec-t);
+    /* width: 50px; */
   }
   .nav-links {
     list-style: none;
@@ -739,6 +761,14 @@
     border-radius: var(--brad);
     justify-self: center;
     box-shadow: var(--box-shadow);
+    width: 100%;
+    max-height: 400px;
+  }
+  .displayNone {
+    display: none;
+  }
+  .displayBlock {
+    display: block;
   }
   .member-1 {
     grid-column: 1/2;
@@ -791,7 +821,8 @@
 
   .fab:hover {
     transform: var(--grow);
-    color: var(--pri-t);
+    /* color: var(--pri-t); */
+    color: var(--sec-t);
   }
 
   /* Testiomony Section */

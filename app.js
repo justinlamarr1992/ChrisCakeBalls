@@ -66,3 +66,32 @@ function doModal(anchor, popupbox) {
     }
   });
 }
+
+// function changeToChris() {
+//   var teamImg = document.getElementById("team-pic");
+//   teamImg.src = "./images/Profile.jpeg";
+//   return false;
+// }
+// function changeToJen() {
+//   var teamImg = document.getElementById("team-pic");
+//   teamImg.src = "./images/Profile2.jpeg";
+//   return false;
+// }
+function changeToChris() {
+  var chris = document.getElementById("team-pic-chris");
+  var jen = document.getElementById("team-pic-jen");
+  chris.classList.add("displayBlock");
+  jen.classList.remove("displayBlock");
+  chris.classList.remove("displayNone");
+  jen.classList.add("displayNone");
+  return false;
+}
+function changeToJen() {
+  var chris = document.getElementById("team-pic-chris");
+  var jen = document.getElementById("team-pic-jen");
+  jen.classList.add("displayBlock");
+  chris.classList.remove("displayBlock");
+  jen.classList.remove("displayNone");
+  chris.classList.add("displayNone");
+  return false;
+}

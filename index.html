@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap"
       rel="stylesheet"
     />
     <script
@@ -25,11 +25,12 @@
     <!-- <header class="navBar" id="myNavBar"> -->
     <header class="" id="myNavBar">
       <div class="header-container">
-        <img
+        <!-- <img
           class="logo"
           src="./images/66-661223_png-file-svg-file-upload-icon-png-transparent.png.jpeg"
           alt="fake logo image"
-        />
+        /> -->
+        <h3 class="logo">Chris Creative CakeBalls</h3>
         <!-- <a href="#hero" class="active">Chris CakeBalls</a> -->
         <nav>
           <ul class="nav-links">
@@ -51,8 +52,7 @@
       <div class="hero-container">
         <h1 class="hero-title">Chris Creative CakeBalls</h1>
         <h4 class="hero-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga
-          quam ducimus magnam ratione!
+          Mouth Watering Cake Pops Made Specifically for your Event
         </h4>
       </div>
     </div>
@@ -733,7 +733,11 @@
         <h5 class="team-description">
           We are a humble husband-wife business that love to serve and
         </h5>
-        <div class="team-member member-1">
+        <div
+          class="team-member member-1"
+          id="clickMe1"
+          onclick="changeToChris()"
+        >
           <i class="fas fa-user-circle fa-4x member-mini-pic"></i>
           <h4 class="member-name">Chris Burnette</h4>
           <h6 class="member-role text-gray">Founder</h6>
@@ -750,7 +754,11 @@
             <a href="" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
           </div>
         </div>
-        <div class="team-member member-2">
+        <div
+          class="team-member member-2"
+          id="clickMe2"
+          onclick="changeToJen();"
+        >
           <i class="fas fa-user-circle fa-4x member-mini-pic"></i>
           <h4 class="member-name">Jennifer Burnette</h4>
           <h6 class="member-role text-gray">Co-Founder</h6>
@@ -767,9 +775,16 @@
           </div>
         </div>
         <img
-          class="member-big-pic"
+          id="team-pic-chris"
+          class="member-big-pic displayBlock"
           src="./images/Profile.jpeg"
-          alt="Img of person clicked"
+          alt="Img of Chris"
+        />
+        <img
+          id="team-pic-jen"
+          class="member-big-pic displayNone"
+          src="./images/Profile2.jpeg"
+          alt="Img of Jen"
         />
       </div>
     </div>
