@@ -1,37 +1,43 @@
 /* colors */
 :root {
   --background: #ffffff;
-  --c-background-down: linear-gradient(to bottom, #fbe0b5, #ffffff);
-  /* --c-background-down: linear-gradient(to bottom, #c89e58, #ffffff); */
-  /* --c-background-down: linear-gradient(to bottom, #bd817f, #ffffff); */
-  --c-background-up: linear-gradient(to top, #fbe0b5, #ffffff);
-  /* --c-background-up: linear-gradient(to top, #c89e58, #ffffff); */
-  /* --c-background-up: linear-gradient(to top, #bd817f, #ffffff); */
 
   --pri-t: #333333;
   --sec-t: #ffffff;
   --tri-t: #999999;
+
+  /* Color 1 */
+  --c-background-down: linear-gradient(to bottom, #fbe0b5, #ffffff);
+  --c-background-up: linear-gradient(to top, #fbe0b5, #ffffff);
   --pri-c: #ff7341;
-  /* --pri-c: #20304f; */
-  /* --pri-c: #c25e5e; */
   --pri-c-rgb: rgba(255, 115, 65, 1);
-  /* --pri-c-rgb: rgb(34, 62, 153); */
-  /* --pri-c-rgb: rgb(34, 62, 153); */
   --sec-c: #fac4cd;
-  /* --sec-c: #e7d8be; */
-  /* --sec-c: #fff6f5; */
   --tri-c: #f51b7e;
-  /* --tri-c: #f51b7e; */
-  /* --tri-c: #f51b7e; */
   --qua-c: #fbe0b5;
-  /* --qua-c: #c89e58; */
-  /* --qua-c: #bd817f; */
   --qua-c-dark: rgb(216, 187, 140);
-  /* --qua-c-dark: rgb(216, 187, 140); */
-  /* --qua-c-dark: rgb(216, 187, 140); */
   --navb-c: #fbe0b5;
-  /* --navb-c: #c89e58; */
-  /* --navb-c: #bd817f; */
+
+  /* Color 2 */
+  /* --c-background-down: linear-gradient(to bottom, #c89e58, #ffffff);
+  --c-background-up: linear-gradient(to top, #c89e58, #ffffff);
+  --pri-c: #20304f;
+  --pri-c-rgb: rgb(34, 62, 153);
+  --sec-c: #e7d8be;
+  --tri-c: #f51b7e;
+  --qua-c: #c89e58;
+  --qua-c-dark: rgb(216, 187, 140);
+  --navb-c: #c89e58; */
+
+  /* Color 3 */
+  /* --c-background-down: linear-gradient(to bottom, #bd817f, #ffffff);
+  --c-background-up: linear-gradient(to top, #bd817f, #ffffff);
+  --pri-c: #c25e5e;
+  --pri-c-rgb: rgb(34, 62, 153);
+  --sec-c: #fff6f5;
+  --tri-c: #f51b7e;
+  --qua-c: #bd817f;
+  --qua-c-dark: rgb(216, 187, 140);
+  --navb-c: #bd817f; */
 
   /* Typography */
   --head-font: "Pacifico", cursive;
@@ -284,11 +290,10 @@
     animation-name: animatetop;
     animation-duration: 0.4s;
   }
-  .modal-header {
+  /* .modal-header {
     padding: 2px 16px;
-    background-color: var(--sec-c);
-    color: white;
-  }
+    
+  } */
   .modal-header {
     padding: 10px 15px;
     justify-content: space-between;
@@ -297,14 +302,16 @@
     flex-direction: row-reverse; /*laziest thing ive ever done*/
     justify-content: space-between;
     padding: 2px 16px;
-    background-color: var(--qua-c);
+    /* background-color: var(--qua-c); */
+    background-color: var(--sec-c);
+    color: white;
   }
   .modal-footer {
-    padding: 2px 16px;
+    padding: 10px 15px;
     background-color: var(--qua-c);
   }
   .modal-body {
-    padding: 2px 16px;
+    padding: 10px 15px;
   }
   /* Add Animation */
   @-webkit-keyframes animatetop {
