@@ -1,23 +1,23 @@
-Head - Add Google Analytics, ALL Meta Data, 
+Head - Add Google Analytics, When we have the website change ALL Meta Data, 
 
 Done Header - Logo, or Words
 
-Hero - Description
+Done Hero - Description
 
-About - Description, Modal info for Read More (Inner Story)
+Done About - Description, Modal info for Read More (Inner Story)
 
-Gallery = Description
+Done Gallery = Description
 
 Flavors - Description, Add Flavor title to every CakeBall, Add list of none pictured CakeBalls,
 Modal info for each CakeBall.
 
-Team - Small picture for Chris and Jen, add Other Social Media Links with icons, 
+Done Team - Small picture for Chris and Jen, add Other Social Media Links with icons, 
 
-Testimony - Description, Add 3 Testimony of people, with Picture, name and link of their Testimony, Change funky spacing of testimonail grid
+Testimony - Add 3 Testimony of people, with Picture, name and link of their Testimony
 
-Pricing - Description, Add key points
+Pricing - Find another Bundle
 
-CTA - Description
+DONE CTA - Description
 
-Footer - Add Link to JustAppin.com
+Footer - Add Link to JustAppin.com, add regular footer stuff
 

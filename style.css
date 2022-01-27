@@ -98,7 +98,7 @@
 
   --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  --grow: scale(1.2);
+  --grow: scale(1.15);
 }
 
 /* Big Screens Up */
@@ -896,10 +896,12 @@
   .test-name {
     grid-column: 2/3;
     grid-row: 1/2;
+    align-self: end;
   }
   .test-source {
     grid-column: 2/3;
     grid-row: 2/3;
+    align-self: start;
   }
   /* Price Section */
   #price {
@@ -989,6 +991,7 @@
     justify-self: center;
   }
   .cta-description {
+    text-align: center;
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: center;
