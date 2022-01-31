@@ -1,4 +1,4 @@
-Head - Add Google Analytics, When we have the website change ALL Meta Data, 
+Done Head - Add Google Analytics, When we have the website change ALL Meta Data, 
 
 Done Header - Logo, or Words
 
@@ -8,16 +8,21 @@ Done About - Description, Modal info for Read More (Inner Story)
 
 Done Gallery = Description
 
-Flavors - Description, Add Flavor title to every CakeBall, Add list of none pictured CakeBalls,
+Done Flavors - Description, Add Flavor title to every CakeBall, Add list of none pictured CakeBalls,
 Modal info for each CakeBall.
 
 Done Team - Small picture for Chris and Jen, add Other Social Media Links with icons, 
 
-Testimony - Add 3 Testimony of people, with Picture, name and link of their Testimony
+Done Testimony - Add 3 Testimony of people, with Picture, name and link of their Testimony
 
-Pricing - Find another Bundle
+Done Figure out why the spacing is off
+
+Done Pricing - Find another Bundle
 
 DONE CTA - Description
 
-Footer - Add Link to JustAppin.com, add regular footer stuff
+Done Footer - Add Link to JustAppin.com, add regular footer stuff
+
+
+Mobile Responsiveness
 
