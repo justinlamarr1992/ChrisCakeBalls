@@ -1,12 +1,9 @@
-function myFunction() {
-  var x = document.getElementById("myNavBar");
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 
-  if (x.className === "navBar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navBar";
-  }
-}
+toggleButton.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});
 
 var dataMap = new Map([
   [
@@ -67,16 +64,6 @@ function doModal(anchor, popupbox) {
   });
 }
 
-// function changeToChris() {
-//   var teamImg = document.getElementById("team-pic");
-//   teamImg.src = "./images/Profile.jpeg";
-//   return false;
-// }
-// function changeToJen() {
-//   var teamImg = document.getElementById("team-pic");
-//   teamImg.src = "./images/Profile2.jpeg";
-//   return false;
-// }
 function changeToChris() {
   var chris = document.getElementById("team-pic-chris");
   var jen = document.getElementById("team-pic-jen");
