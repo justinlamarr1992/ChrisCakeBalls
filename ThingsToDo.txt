@@ -23,6 +23,20 @@ DONE CTA - Description
 
 Done Footer - Add Link to JustAppin.com, add regular footer stuff
 
+Done - Mobile Responsiveness
 
-Mobile Responsiveness
+Add Gallery with different type of CakeBalls
+
+Gallery Button (I guess)
+
+Done List of Cakeballs instead of grid balls.. Most popular chocolate, red velvet wedding cake, then lemon
+
+DOne Add Fruity Pebbles to list of Flavors
+
+Done remove twitter from members
+
+Done no address but New Orleans instead
+
+Done text change To price... 
+change for mobile as well
 
