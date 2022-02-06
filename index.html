@@ -98,7 +98,11 @@
     </header>
     <div id="overlay"><!-- Overlay for dimming screen with Modal --></div>
     <div id="hero">
-      <img class="hero-image" src="./images/Pic.jpeg" alt="Hero Cakeballs" />
+      <img
+        class="hero-image"
+        src="./images/CakeBalls/Pics1.jpeg"
+        alt="Hero Cakeballs"
+      />
 
       <div class="hero-container">
         <h1 class="hero-title">Chris Creative CakeBalls</h1>
@@ -177,58 +181,93 @@
 
         <img
           class="about-pic pic1"
-          src="./images/Pic5.jpeg"
+          src="./images/CakeBalls/Pics10.jpeg"
           alt="CakeBall Example"
         />
         <img
           class="about-pic pic2"
-          src="./images/Pic18.jpeg"
+          src="./images/CakeBalls/Pics9.jpeg"
           alt="CakeBall Example 2"
         />
       </div>
     </div>
     <div id="gallery">
       <div class="gallery-container">
-        <h2 class="gallery-title">Gallery of Our Cakeballs</h2>
+        <h2 class="gallery-title">Cakeball Gallery</h2>
         <h5 class="gallery-description">
           Here are some of the Designs we provide with our Cakeballs and Pops.
         </h5>
-        <div class="cakeballs-gallery-pictures">
+        <div class="gallery-pictures">
           <img
-            class="cakeballs-pic cakeball-1"
-            src="./images/Pic10.jpeg"
+            class="gallery-pic gallery-1"
+            src="./images/CakeBalls/Pics2.jpeg"
             alt="Cakeball Example 3"
           />
           <img
-            class="cakeballs-pic cakeball-2 half-pic"
-            src="./images/Pic20.jpeg"
+            class="gallery-pic gallery-2"
+            src="./images/CakeBalls/Pics3.jpeg"
             alt="Cakeball Example 4"
           />
           <img
-            class="cakeballs-pic cakeball-3"
-            src="./images/Pic11.jpeg"
+            class="gallery-pic gallery-3"
+            src="./images/CakeBalls/Pics4.jpeg"
             alt="Cakeball Example 5"
           />
           <img
-            class="cakeballs-pic cakeball-4"
-            src="./images/Pic13.jpeg"
+            class="gallery-pic gallery-4"
+            src="./images/CakeBalls/Pics5.jpeg"
             alt="Cakeball Example 6"
           />
           <img
-            class="cakeballs-pic cakeball-5"
-            src="./images/Pic19.jpeg"
+            class="gallery-pic gallery-5"
+            src="./images/CakeBalls/Pics6.jpeg"
             alt="Cakeball Example 7"
           />
           <img
-            class="cakeballs-pic cakeball-6"
-            src="./images/Pic8.jpeg"
+            class="gallery-pic gallery-6"
+            src="./images/CakeBalls/Pics7.jpeg"
             alt="Cakeball Example 8"
           />
           <img
-            class="cakeballs-pic cakeball-7 half-pic"
-            src="./images/Pic22.jpeg"
+            class="gallery-pic gallery-7"
+            src="./images/CakeBalls/Pics8.jpeg"
             alt="Cakeball Example 8"
           />
+        </div>
+        <button
+          id="galleryModalButton"
+          onclick="galleryModal()"
+          class="gallery-button"
+        >
+          View More
+        </button>
+        <!-- The Modal -->
+        <div id="galleryModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content gallery-modal">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Gallery</h2>
+            </div>
+            <div class="modal-body">
+              <div id="image-gallery" class="images"></div>
+              <div id="gallery-pagination">
+                <button id="btnPrev">
+                  &larr; <span class="sr-only"></span>
+                </button>
+                <div class="dot-pag">
+                  <div id="gallery-dots"></div>
+                  <span id="page"></span>
+                </div>
+                <button id="btnNext">
+                  <span class="sr-only"> Next </span>&rarr;
+                </button>
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <h3>Which Cakeball would you like to Order?</h3>
+            </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -236,9 +275,6 @@
       <div class="cakeballs-container">
         <div class="cakeballs-flavor">
           <h2 class="cakeballs-title">CakeBall Flavors</h2>
-          <!-- <h5 class="cakeballs-flavor-description">
-            Here are the flavors of our Beautiful delicious CakeBalls
-          </h5> -->
           <div class="cakeballs-list">
             <div class="list-most-popular">
               <h5>Most Popular</h5>
@@ -1035,7 +1071,6 @@
         </div>
       </div>
     </div>
-
     <div id="team">
       <div class="team-container">
         <h2 class="team-title">Meet Our Team</h2>
@@ -1170,9 +1205,7 @@
           <h5 class="price-block-description">$1 a Ball</h5>
           <h5 class="price-block-description">Custom Appearance</h5>
           <h5 class="price-block-description">Amazing Flavor</h5>
-          <h5 class="price-block-description">
-            Minimum Order of 15 per Flavor
-          </h5>
+          <h5 class="price-block-description">Min Order of 15 per Flavor</h5>
           <h6></h6>
           <!-- <button class="price-block-button">Purchase</button> -->
         </div>
@@ -1181,9 +1214,7 @@
           <h3 class="price-block-price">$12 per Flavor</h3>
           <h5 class="price-block-description">$2+ a Pop</h5>
           <h5 class="price-block-description">Bigger Than Cakeballs</h5>
-          <h5 class="price-block-description">
-            Minimum Order of 12 per Flavor
-          </h5>
+          <h5 class="price-block-description">Min Order of 12 per Flavor</h5>
           <h5 class="price-block-description">Prices Increase with Design</h5>
           <!-- <button class="price-block-button">Purchase</button> -->
         </div>
@@ -1313,6 +1344,7 @@
         </form>
       </div>
     </div>
+
     <footer>
       <!-- Company Name and Copyright here -->
       <div class="footer-container">

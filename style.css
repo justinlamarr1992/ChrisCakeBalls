@@ -296,10 +296,7 @@ body {
     animation-name: animatetop;
     animation-duration: 0.4s;
   }
-  /* .modal-header {
-    padding: 2px 16px;
-    
-  } */
+
   .modal-header {
     padding: 10px 15px;
     justify-content: space-between;
@@ -376,6 +373,114 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+  /* Gallery modal */
+  .gallery-modal {
+    height: auto;
+    max-height: 100%;
+    overflow: none;
+  }
+  .gallery-modal .modal-body {
+  }
+  .images {
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+  }
+
+  /* May be cause of problem for other photos */
+  #image-gallery img {
+    border-radius: var(--brad);
+    height: 95%;
+    width: 90%;
+    max-width: 100%;
+    vertical-align: middle;
+    box-shadow: var(--box-shadow);
+    row-gap: 10px;
+  }
+  .template {
+    transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 0;
+    position: relative;
+    background: var(--sec-t);
+  }
+
+  .template p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    padding: 25px 10px 10px 10px;
+  }
+
+  .template.animate {
+    transform: scale(1);
+    opacity: 1;
+  }
+  #gallery-pagination {
+    margin: 15px 0;
+  }
+  #btnNext,
+  #btnPrev {
+    background: transparent;
+    color: var(--pri-c);
+    padding: 8px 28px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    height: auto;
+    line-height: 24px;
+    width: auto;
+    box-shadow: none;
+  }
+  #gallery-pagination #page {
+    color: var(--navb-c);
+    font-size: 13px;
+  }
+  .dot-pag {
+    text-align: center;
+  }
+  .sr-only {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  #gallery-dots {
+    margin-bottom: 15px;
+  }
+
+  .gallery-dot {
+    background: var(--pri-c);
+    border: 0;
+    padding: 0;
+    width: 5px;
+    height: 5px;
+    margin: 5px;
+    opacity: 0.4;
+    outline: none;
+    cursor: pointer;
+  }
+  .gallery-dot.active {
+    opacity: 1;
+  }
+  #gallery-pagination {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: start;
+  }
 
   /* Header and Nav */
   header {
@@ -437,30 +542,6 @@ body {
     height: 21px;
   }
 
-  /* .navBar {
-    overflow: hidden;
-    background: var(--navb-c);
-  }
-  .navBar a {
-    float: left;
-    display: block;
-     color: var(--pri-t); 
-    text-align: center;
-    padding: 14px 16px;
-     text-decoration: none; 
-    font-size: 17px;
-  }
-  .navBar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .navBar a.active {
-    background-color: #04aa6d;
-    color: white;
-  }
-  .navBar .icon {
-    display: none;
-  } */
   /* Hero Section */
   #hero {
     display: grid;
@@ -472,7 +553,6 @@ body {
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 5% 1fr;
-    /* grid-template-rows: 1fr 1fr; */
     grid-template-rows: auto auto;
   }
   .hero-title {
@@ -510,7 +590,6 @@ body {
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 5% 0.3fr 0.3fr 0.3fr;
-    /* grid-template-rows: repeat(3, 1fr); */
     grid-template-rows: repeat(3, auto);
     row-gap: var(--r-gap);
   }
@@ -543,44 +622,34 @@ body {
     grid-row: 2/4;
   }
 
-  /* CakeBalls Section */
-  #cakeballs {
+  /* Gallery Section */
+  #gallery {
     display: grid;
     grid-template-columns: var(--wcol);
     grid-template-rows: var(--wrow);
     background-image: var(--c-background-down);
   }
-  .cakeballs-container {
+  .gallery-container {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    row-gap: 50px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    /* height: auto; */
-  }
-  .cakeballs-gallery {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: grid;
     row-gap: 20px;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 80px 50px auto; */
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
   }
-  .cakeballs-gallery-title {
+  .gallery-title {
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: center;
     justify-self: center;
   }
-  .cakeballs-gallery-description {
+  .gallery-description {
     grid-column: 1/2;
     grid-row: 2/3;
-    align-self: start;
+    align-self: center;
     justify-self: center;
   }
-  .cakeballs-gallery-pictures {
+  .gallery-pictures {
     grid-column: 1/2;
     grid-row: 3/4;
     display: grid;
@@ -589,47 +658,67 @@ body {
     row-gap: 25px;
     column-gap: 25px;
   }
-  .cakeballs-pic {
+  .gallery-button {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    align-self: start;
+    justify-self: center;
+  }
+  .gallery-pic {
     height: auto;
     align-self: center;
     justify-self: center;
     border-radius: var(--brad);
     box-shadow: var(--box-shadow);
   }
-  .cakeball-1 {
+  .gallery-1 {
     grid-column: 1/2;
     grid-row: 1/3;
   }
-  .cakeball-2 {
+  .gallery-2 {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .cakeball-3 {
+  .gallery-3 {
     grid-column: 3/4;
     grid-row: 1/3;
   }
-  .cakeball-4 {
+  .gallery-4 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  .cakeball-5 {
+  .gallery-5 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  .cakeball-6 {
+  .gallery-6 {
     grid-column: 3/4;
     grid-row: 3/4;
   }
-  .cakeball-7 {
+  .gallery-7 {
     grid-column: 2/3;
     grid-row: 2/3;
+  }
+
+  /* CakeBalls Section */
+  #cakeballs {
+    display: grid;
+    grid-template-columns: var(--wcol);
+    grid-template-rows: var(--wrow);
+  }
+  .cakeballs-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
 
   .cakeballs-flavor {
     grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
-    row-gap: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     background-color: var(--sec-c);
@@ -637,28 +726,14 @@ body {
     box-shadow: var(--box-shadow);
     padding: var(--m-padding);
   }
-  .cakeballs-flavor-title {
+  .cakeballs-title {
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: center;
     justify-self: center;
   }
-  /* .cakeballs-flavor-description {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    align-self: center;
-    justify-self: center;
-  } */
-  /* .cakeballs-flavor-flavors {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-  } */
-  .cakeballs-flavor-list {
+
+  .cakeballs-list {
     grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
@@ -668,13 +743,13 @@ body {
     justify-items: center;
     align-items: center;
   }
-  .cakeballs-flavor-list ul {
+  .cakeballs-list ul {
     list-style-type: none;
     overflow: none;
   }
-  .cakeballs-flavor-list h5,
-  .cakeballs-flavor-list h3,
-  .cakeballs-flavor-list h4 {
+  .cakeballs-list h5,
+  .cakeballs-list h3,
+  .cakeballs-list h4 {
     text-align: center;
     line-height: normal;
   }
@@ -694,23 +769,32 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 10px auto;
+    margin: 5px auto;
   }
   .list-other-flavors li {
     text-align: center;
-    margin: 5px 15px;
+    margin: 5px 10px;
     color: var(--pri-t);
   }
-  .cakeballs-flavor-text-pic {
+  /* .cakeballs-flavor-flavors {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+  } */
+  /* .cakeballs-flavor-text-pic {
     position: relative;
     text-align: center;
     color: Black;
     display: flex;
     flex-direction: column;
-  }
-  .flavor-text {
+  } */
+  /* .flavor-text {
     display: none;
-  }
+  } */
   /* .cakeballs-flavor-flavors-image {
     width: 100%;
     cursor: pointer;
@@ -828,13 +912,13 @@ body {
     grid-column: 12/13;
     grid-row: 4/5;
   } */
-  /* Gallery Section */
 
   /* Team Section */
   #team {
     display: grid;
     grid-template-columns: var(--wcol);
     grid-template-rows: var(--wrow);
+    background-image: var(--c-background-up);
   }
   .team-container {
     grid-column: 2/3;
@@ -848,7 +932,6 @@ body {
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: center;
-    padding-right: 100px;
   }
   .team-description {
     grid-column: 2/3;
@@ -862,8 +945,6 @@ body {
     border-radius: var(--brad);
     justify-self: center;
     box-shadow: var(--box-shadow);
-    /* width: 100%; */
-    /* max-height: 400px; */
   }
   .displayNone {
     display: none;
@@ -922,7 +1003,6 @@ body {
 
   .fab:hover {
     transform: var(--grow);
-    /* color: var(--pri-t); */
     color: var(--sec-t);
   }
 
@@ -931,7 +1011,7 @@ body {
     display: grid;
     grid-template-columns: var(--wcol);
     grid-template-rows: var(--wrow);
-    background-image: var(--c-background-up);
+    background-image: var(--c-background-down);
   }
   .testimony-container {
     grid-column: 2/3;
@@ -957,7 +1037,6 @@ body {
     grid-column: 1/2;
     grid-row: 3/4;
     display: grid;
-    /* padding-bottom: 0; */
     column-gap: var(--c-gap);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -967,8 +1046,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     row-gap: 20px;
-    /* min-height: 200px;
-    max-height: 250px; */
     border: none;
     padding: var(--m-padding);
     border-radius: var(--brad);
@@ -1022,7 +1099,6 @@ body {
     display: grid;
     grid-template-columns: var(--wcol);
     grid-template-rows: var(--wrow);
-    background-image: var(--c-background-down);
   }
   .price-container {
     grid-column: 2/3;
@@ -1071,8 +1147,7 @@ body {
     background-color: var(--pri-c);
   }
   .price-block .price-block-title,
-  .price-block .price-block-price
-  /* .price-block .price-block-description */ {
+  .price-block .price-block-price {
     margin: 0;
   }
   .price-3 .price-block-title,
@@ -1080,9 +1155,6 @@ body {
   .price-3 .price-block-description {
     color: white;
   }
-  /* .price-3 button {
-    background-color: var(--qua-c);
-  } */
 
   .price-block-description {
     margin-top: 0;
@@ -1225,7 +1297,6 @@ body {
   }
   h3 {
     font-size: var(--mh3);
-    /* line-height: 27px; */
   }
   h4 {
     font-size: var(--mh4);
@@ -1326,7 +1397,6 @@ body {
     text-align: center;
   }
   .about-button {
-    /* grid-column: 1/2; */
     grid-column: 1/4;
     grid-row: 3/4;
     align-self: center;
@@ -1340,12 +1410,16 @@ body {
     grid-column: 2/4;
     grid-row: 5/7;
   }
+  /* Gallery Section */
+  #gallery {
+    grid-template-columns: var(--mcol);
+    grid-template-rows: var(--mrow);
+  }
   /* CakeBalls Section */
   #cakeballs {
     grid-template-columns: var(--mcol);
     grid-template-rows: var(--mrow);
   }
-  /* Gallery Section */
 
   /* Team Section */
   #team {
@@ -1354,7 +1428,6 @@ body {
   }
   .team-container {
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 0.5fr 0.5fr 0.5fr; */
     grid-template-rows: repeat(3, auto);
     row-gap: var(--r-gap);
   }
@@ -1362,7 +1435,6 @@ body {
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: center;
-    padding-right: 100px;
   }
   .team-description {
     grid-column: 2/3;
@@ -1405,7 +1477,6 @@ body {
 
   .test-user {
     grid-template-columns: 20% 80%;
-    /* margin-bottom: 2000px; */
   }
   /* Price Section */
   #price {
@@ -1458,8 +1529,6 @@ body {
 /* Mobile */
 @media screen and (max-width: 480px) {
   .modal-header h2 {
-    /* font-size: 22px; */
-    /* line-height: 35px; */
   }
   .modal-body h5 {
     line-height: 20px;
@@ -1469,7 +1538,6 @@ body {
     line-height: 20px;
   }
   .header-container {
-    /* height: 7.5vh; */
     padding: 2% 2.5%;
   }
 
@@ -1511,56 +1579,73 @@ body {
   .about-button {
     justify-self: start;
   }
-  /* CakeBalls Section */
-  .cakeballs-container {
-    row-gap: 25px;
+  /* Gallery Section */
+
+  .images {
+    grid-template-columns: 50% 50%;
   }
-  .cakeballs-gallery {
-    row-gap: 10px;
-    grid-template-rows: 80px auto auto;
-  }
-  .cakeballs-gallery-title {
-    align-self: end;
+  .gallery-title {
     justify-self: start;
   }
-  .cakeballs-gallery-description {
-    justify-self: start;
+  .gallery-description {
+    align-self: start;
+    justify-self: center;
   }
-  .cakeballs-gallery-pictures {
+  .gallery-pictures {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: repeat(6, auto);
     row-gap: 10px;
-    column-gap: 10px;
+    column-gap: 25px;
   }
-  .cakeball-1 {
+  .gallery-button {
+    grid-row: 4/5;
+    align-self: center;
+    justify-self: start;
+  }
+  .gallery-pic {
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    border-radius: var(--brad);
+    box-shadow: var(--box-shadow);
+  }
+  .gallery-1 {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .cakeball-2 {
+  .gallery-2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .cakeball-3 {
+  .gallery-3 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  .cakeball-4 {
+  .gallery-4 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  .cakeball-5 {
+  .gallery-5 {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-  .cakeball-6 {
+  .gallery-6 {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-  .cakeball-7 {
+  .gallery-7 {
     grid-column: 1/2;
     grid-row: 7/8;
   }
-  .cakeballs-flavor-flavors {
+  /* CakeBalls Section */
+  .list-most-popular li {
+    margin: 5px 10px;
+  }
+
+  /* .cakeballs-flavor-flavors {
     grid-template-columns: repeat(7, auto);
     grid-template-rows: repeat(8, auto);
   }
@@ -1674,8 +1759,7 @@ body {
   .flavor-26 {
     grid-column: 5/6;
     grid-row: 8/9;
-  }
-  /* Gallery Section */
+  } */
 
   /* Team Section */
   .team-container {
@@ -1729,7 +1813,6 @@ body {
   }
   .test-user {
     grid-template-columns: 30% 70%;
-    /* margin-bottom: 2000px; */
   }
   /* Price Section */
   .price-container {

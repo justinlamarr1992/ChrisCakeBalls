@@ -25,7 +25,7 @@ Done Footer - Add Link to JustAppin.com, add regular footer stuff
 
 Done - Mobile Responsiveness
 
-Add Gallery with different type of CakeBalls
+Done Add Gallery with different type of CakeBalls
 
 Gallery Button (I guess)
 
@@ -38,5 +38,5 @@ Done remove twitter from members
 Done no address but New Orleans instead
 
 Done text change To price... 
-change for mobile as well
+Done change for mobile as well
 
